@@ -50,23 +50,43 @@
 	    <!-- Custom styles for this template -->
 	    <link href="product.css" rel="stylesheet">
 
-	    <!-- Magic effect -->
-	    <link rel="stylesheet" type="text/css" href="magic_effect.css">
-
 	<meta charset="utf-8">
 </head>
 <body>
 	<!-- Menu -->
-	<header class="site-header sticky-top py-1 card">
-	  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-	    <a class="py-2" href="#" aria-label="Product">
-	      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Словарь Веб-Дизайнера</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-	    </a>
-	    <a class="py-2 d-none d-md-inline-block" href="#">Главная</a>
-	    <a class="py-2 d-none d-md-inline-block" href="dictionary_design.html">Словарь</a>
-	    <a class="py-2 d-none d-md-inline-block" href="contact.html">О проекте</a>
-	  </nav>
-	</header>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="index.html">Словари Веб-Дизайнера</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarCollapse">
+	      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Главная</a>
+	        </li>
+	        <!--<li class="nav-item">
+	          <a class="nav-link disabled" href="#">Словарь</a>
+	        </li> -->
+
+	        <div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+			    Словари
+			  </button>
+			  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+			    <li><a class="dropdown-item" href="dictionary_design.html">Словарь веб-дизайна</a></li>
+			    <li><a class="dropdown-item" href="dictionary_ui_design.html">Словарь UI-дизайнера</a></li>
+				<li><a class="dropdown-item" href="dictionary_ux_design.html">Словарь UX-дизайнера</a></li>
+			  </ul>
+			</div>
+
+	        <li class="nav-item">
+	          <a class="nav-link" href="contact.html">О проекте</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 
 	<main>
 	  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
